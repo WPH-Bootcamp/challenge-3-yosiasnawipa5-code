@@ -8,35 +8,37 @@
   </head>
   <body>
     <!-- ========== NAVBAR ========== -->
-    <header>
-      <nav class="flex justify-between item-center px-4 py-3 shadow">
-        <h1>Tech</h1>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="sticky top-0 z-50 backdrop-blur-lg border-b border-white/10">
+     <div class="container mx-auto px-6 py-4 flex justify-between items-center"></div>
+     <div class="text-2xl font-extrabold tracking-tighter">Tech.</div>
     </header>
     <!-- ========== HERO SECTION ========== -->
      <main>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <section class="text-center px-4 py-12 md:py-16 lg:py-20">
-        <h2>Build with the Future</h2>
-        <p>
+       <section id="about" class="relative miin-h-[90vh] flex items-center bg-[linear-gradient(160deg,#000000_0%,#210A5E4D_30%)] overflow-hidden">
+      <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          <div class="z-10">
+        <h1 class="text--5xl md:text-7xl font-extrabold leading-[1.1] mb-6">Build with the <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-purple-500">Future</span></h1>
+        <p class="text-zinc-400 text-lg md:text-xl mb:text-xl mb-10 max-w-lg">
           From building sleek websites and mobile apps to integrating AI solution,
           we help brands turn ideas into powerful digital experiences.
         </p>
+        <a href="#contact" class="inline-block bg-[#0f766e] hover:bg-[#115e59] text-white px-10 py-4 rounded-xl font-bold text-lg transition transform hover:-translate-y-1 shadow-lg shadow-teal-900/20">
+          Let's Talk
+        </a>
+          </div>
+        </div>
       </section>
-      </div>
      </main>
 
     <!-- ========== FOOTER ========== -->
-     <footer>
-      <div class="border-t border-gray-700 mt-8 pt-6 text-center">
-      <p class="text-xs text-gray-500">
-        © 2025 Web Programming Hack. All rights reserved.</p>
+     <footer class="bg-black py-12 border-t border-white/10 text-center text-zinc-500">
+      <div class="container mx-auto px-6">
+      <p class="text-sm font-medium">
+        &copy; 2025 Web Programming Hack. All rights reserved.</p>
+        <div class="mt-4 flex justify-center gap-6 text-xs uppercase tracking-widest">
+          <a href="#" class="hover:text-white transition">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition">Terms of service</a>
+        </div>
       </div>
       </footer>
   </body>
